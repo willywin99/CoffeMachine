@@ -7,7 +7,9 @@
 // console.log("Kopi Anda sudah siap!");
 
 
-const {coffeeStock, isCoffeeMachineReady} = require('./state')
+// const {coffeeStock, isCoffeeMachineReady} = require('./state')
+
+import { coffeeStock as stock, isCoffeeMachineReady } from "./state.js";
 
 // const makeCoffee = (type, miligrams) => {
 //     if (coffeeStock[type] >= miligrams) {
@@ -19,5 +21,13 @@ const {coffeeStock, isCoffeeMachineReady} = require('./state')
 
 // makeCoffee("robusta", 80)
 
-console.log(coffeeStock);
+// const displayStock = stock => {
+//     for (const type in stock) {
+//         console.log(type);
+//     }
+// }
+
+// displayStock(coffeeStock)
+
+console.log(stock);
 console.log(isCoffeeMachineReady);
